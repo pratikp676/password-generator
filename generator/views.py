@@ -9,6 +9,7 @@ def home(request):
     return render(request, 'generator/home.html')
 
 
+
 def password(request):
 
     characters = list('abcdefghijklmnopqrstuvwxyz')
@@ -27,8 +28,4 @@ def password(request):
         thepassword += random.choice(characters)
 
     return render(request, 'generator/password.html',{'password':thepassword})
-
-
-
-
 
